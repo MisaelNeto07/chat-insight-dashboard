@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "my-chat-insight-app"
+location: "southamerica-east1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "postgres"
+      cloudSql:
+        instanceId: "my-chat-insight-app-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
